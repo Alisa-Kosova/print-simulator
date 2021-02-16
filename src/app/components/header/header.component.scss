@@ -1,0 +1,48 @@
+@import '../../common/variables.scss';
+
+.header {
+  background-image: url("../../../assets/background.png");
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header__logo {
+  height: 80px;
+  width: auto;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.header__logo:focus {
+  outline: none;
+}
+
+.header__title {
+  color: $white;
+  @include text-shadow;
+
+  @media (max-width: 640px) {
+    display: none;
+  }
+}
+
+.header__buttons,
+.header__logo-block {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
+}
+
+.header__button {
+  @include color-button;
+  color: $white;
+}
+
+.header__button:focus {
+  outline: none;
+  border: solid 1px $black;
+}
