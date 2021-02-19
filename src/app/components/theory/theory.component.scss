@@ -1,0 +1,12 @@
+@import '../../common/variables.scss';
+
+.theory {
+  background-color: $white;
+  text-align: justify;
+  height: 100%;
+  padding: 10px;
+}
+
+.theory__h1 {
+  text-align: center;
+}
