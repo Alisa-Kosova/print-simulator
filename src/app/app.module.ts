@@ -10,6 +10,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { TheoryComponent } from './components/theory/theory.component';
 import { ParagraphComponent } from './components/paragraph/paragraph.component';
+import { PopupTestComponent } from './components/popup-test/popup-test.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ParagraphComponent } from './components/paragraph/paragraph.component';
     HeaderComponent,
     HomeComponent,
     TheoryComponent,
-    ParagraphComponent
+    ParagraphComponent,
+    PopupTestComponent
   ],
   imports: [
     BrowserModule,
