@@ -1,0 +1,17 @@
+<div class="test" [ngClass]="{error: errors}">
+  <div class="test__text">{{testText$ | async}}
+    <textarea class="test__user-text"
+    autoFocus 
+    (paste)="checkValue($event)"
+    (keypress)="checkValue($event)"
+    [(ngModel)]="userText"></textarea>
+  </div>
+  <div class="test__params">
+    <div>Точность</div>
+    <div class="test__param">{{accuracy$ | async | number:'1.2-2'}}%</div>
+    <div>Объем текста</div>
+    <div class="test__param">{{letters$ | async}} знаков</div>
+    <div>Скорость</div>
+    <div class="test__param">{{speed$ | async | number:'1.2-2'}} знаков в минуту</div>
+  </div>
+</div>

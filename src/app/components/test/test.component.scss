@@ -1,0 +1,44 @@
+@import '../../common/variables.scss';
+
+.test {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-family: 'Times New Roman';
+  padding: 20px;
+  background-color: $white;
+}
+
+.test__text {
+  color: $silver;
+  position: relative;
+}
+
+.test__params {
+  text-align: center;
+  padding-left: 10px;
+}
+
+.test__param {
+  margin-bottom: 10px;
+}
+
+.test__user-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  font-size: 18px;
+  font-family: 'Times New Roman';
+  top: 0;
+  left: 0;
+  padding: 0;
+  border: none;
+  resize: none;
+}
+
+.error {
+  border: red 1px solid;
+}
